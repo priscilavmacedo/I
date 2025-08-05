@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laços de Repetição</title>
+</head>
+
+<body>
+  <!-- O programa deve solicitar entradas do usuário, processar os dados e exibir resultados 
+   em diferentes formatos. -->
+  <script>
+
+    // guarda lista de nomes
+    const nomes = [];
+
+
+    while (true) {
+      const entrada = prompt("Digite um nome (ou 'sair' para encerrar):");
+      if (entrada === null) continue;
+
+      if (entrada === "sair") {
+        break;
+      }
+      nomes.push(entrada);
+    }
+
+    let mensagem = "nomes digitados:"
+
+    for (let i = 0; i < nomes.length; i++) {
+      mensagem += `${i + 1}: ${nomes[i]}; `
+    }
+
+    alert(mensagem);
+    console.log(mensagem);
+
+
+    for (const nome of nomes) {
+      alert(`ola, ${nome}`);
+      console.log(`ola, ${nome}`);
+
+    }
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>
