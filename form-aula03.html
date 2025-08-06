@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      /* display: flex; */
+      background-color: grey;
+      /* justify-content: center; */
+      /* align-items: center; */
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px 0 10px;
+      color: #333;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    .container {
+      margin: 0 auto;
+      background: rgb(184, 182, 185);
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 10px;
+      /* border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      padding: 20px; */
+    }
+
+    .containerOne {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    label {
+      /* margin-bottom: 10px; */
+      margin-top: 5px;
+      font-weight: bold;
+
+    }
+
+    input,
+    select,
+    textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+      gap: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .botao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      gap: 4px;
+    }
+
+    .botao input[type="button"] {
+      background-color: #add8e6;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .botao input[type="submit"] {
+      background-color: #90ee90;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+
+
+    /* input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+      flex: 1 1 45%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input {
+      border-radius: 5px;
+      box-sizing: border-box;
+    } */
+  </style>
+</head>
+
+<body>
+  <!-- <header>
+    <nav> -->
+  <h1>Elementos HTML Semânticos e Formulários</h1>
+  <!-- </nav>
+  </header> -->
+
+  <div class="container">
+    <form action="enviar" method="post">
+
+      <div class="containerOne">
+        <label for="texto">Nome:</label>
+        <input type="text" id="texto" name="nome" placeholder="Digite">
+      </div>
+
+      <div class="containerOne">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="containerOne">
+        <label for="senha">Senha:</label>
+        <input type="number" id="senha" name="senha">
+      </div>
+
+      <div class="containerOne">
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" aria-placeholder="Selecione">
+          <option value="brasil">Brasil</option>
+          <option value="eua">Eua </option>
+          <option value="japao">Japão</option>
+        </select>
+      </div>
+
+      <div class="containerOne">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"> </textarea>
+      </div>
+
+      <div class="botao">
+        <input type="button" value="Limpar">
+        <input type="submit" value="Enviar">
+      </div>
+
+    </form>
+  </div>
+
+
+</body>
+
+</html>
