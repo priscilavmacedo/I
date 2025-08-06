@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* estilos globaias das PALETAS  */
+
+    :root {
+      --cor-principal: #8A2BE2;
+      --cor-secundaria: #87cefa;
+      --cor-suporte: #90ee90;
+      --cor-texto: #333;
+      --cor-link: #5c2d91;
+      --cor-alerta: #FF4C4C;
+      --cor-fundo: #F3E8FF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--cor-fundo);
+      color: var(--cor-texto);
+      padding: 20px;
+    }
+
+    header {
+      background: var(--cor-principal);
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      background-color: var(--cor-principal);
+    }
+
+
+    section {
+      margin-top: 10px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    aside {
+      margin-top: 15px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    article {
+      margin-top: 15px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    .btn {
+      background-color: var(--cor-suporte);
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+
+    }
+
+    a {
+      background-color: var(--cor-secundaria);
+    }
+
+    footer {
+      margin-top: 15px;
+      padding: 20px;
+      background-color: var(--cor-principal);
+      border-radius: 10px;
+      color: white;
+
+    }
+  </style>
+</head>
+
+<!-- PALETAS DE CORES -->
+<!-- Propósito	Cor	Código HEX	Exemplo Visual
+Cor principal	Roxo suave	#8A2BE2	
+Cor secundária	Azul claro	#87CEFA	
+Cor de destaque	Coral suave	#FF6F61	
+Cor de fundo clara	Lavanda	#F3E8FF	
+Texto primário	Cinza escuro	#333333	
+Texto secundário	Cinza claro	#666666	
+Cor de erro/alerta	Vermelho claro	#FF4C4C -->
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#home">INICIO</a>
+      <a href="#servico">SERVIÇOS</a>
+      <a href="#fotos">FOTOS</a>
+      <a href="#contato">CONTATO</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>teste h2</h2>
+      <p>conteudo principal</p>
+      <ul>
+        <li>Item de lista 1</li>
+        <li>Item de lista 2</li>
+        <li>Item de lista 3</li>
+      </ul>
+      <button class="btn">Clique aqui</button>
+    </section>
+
+    <aside>
+      <h3>Dica Rápida</h3>
+      <p>dicas de como fazer um site em HTML!</p>
+    </aside>
+
+    <article>
+      <h2>Artigo em Destaque </h2>
+      <p>Este artigo mostra como criar um site com HTML5 semântico, usando tags como <code>section</code>,
+        <code>aside</code> e <code>article</code>.
+      </p>
+      <p>Leia mais no site <a href="https://www.w3schools.com/html/default.asp"> https://www.w3schools.com/</a></p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>&copy;2025 - teste infinity</p>
+
+  </footer>
+
+
+
+
+
+</body>
+
+</html>
